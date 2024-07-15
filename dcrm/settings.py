@@ -50,6 +50,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
 ROOT_URLCONF = 'dcrm.urls'
 
 TEMPLATES = [
@@ -81,7 +85,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'S@f00rA!!',
         'HOST': 'localhost',
-        'PORT': '33306',
+        'PORT': '3306',
     }
 }
 
