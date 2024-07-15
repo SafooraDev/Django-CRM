@@ -16,7 +16,7 @@ def home(request):
             messages.success(request, "You have been logged in")
             return redirect('home')
         else:
-            messages.error(request, "There was an error logging in. Please try again.")
+            messages.error(request, "There was an error logging in. Please try again....")
             return redirect('home')
     else:
         return render(request, 'home.html',{'records': records})
